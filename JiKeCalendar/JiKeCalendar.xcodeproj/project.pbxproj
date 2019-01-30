@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F341D96F21F88F5B00C111FB /* JikeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F341D96E21F88F5B00C111FB /* JikeTools.m */; };
+		F39501382201471400CAF450 /* JiKeUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F39501372201471400CAF450 /* JiKeUserDefaults.m */; };
+		F39501392201503000CAF450 /* JiKeUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F39501372201471400CAF450 /* JiKeUserDefaults.m */; };
+		F395013A2201505B00CAF450 /* JikeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F341D96E21F88F5B00C111FB /* JikeTools.m */; };
+		F395013B2201511B00CAF450 /* JiKeAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443322004C9000F20E4C /* JiKeAPIService.m */; };
+		F395013C220152DD00CAF450 /* JiKeURLSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443722004CDD00F20E4C /* JiKeURLSessionHelper.m */; };
 		F3B01AF121EE11AB00465ABF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B01AF021EE11AB00465ABF /* AppDelegate.m */; };
 		F3B01AF421EE11AB00465ABF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B01AF321EE11AB00465ABF /* ViewController.m */; };
 		F3B01AF721EE11AB00465ABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B01AF521EE11AB00465ABF /* Main.storyboard */; };
@@ -17,6 +23,10 @@
 		F3B01B1021EE11D600465ABF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B01B0F21EE11D600465ABF /* TodayViewController.m */; };
 		F3B01B1321EE11D600465ABF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B01B1121EE11D600465ABF /* MainInterface.storyboard */; };
 		F3B01B1721EE11D600465ABF /* calendar.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3B01B0921EE11D600465ABF /* calendar.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3C1443522004C9100F20E4C /* JiKeAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443322004C9000F20E4C /* JiKeAPIService.m */; };
+		F3C1443822004CDD00F20E4C /* JiKeURLSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443722004CDD00F20E4C /* JiKeURLSessionHelper.m */; };
+		F3C1443C2200554500F20E4C /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443B2200554500F20E4C /* NSString+JSON.m */; };
+		F3D785BC21FEB3540097D30F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D785BB21FEB3540097D30F /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F341D96D21F88F5B00C111FB /* JikeTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JikeTools.h; sourceTree = "<group>"; };
+		F341D96E21F88F5B00C111FB /* JikeTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JikeTools.m; sourceTree = "<group>"; };
+		F341D97121F8933600C111FB /* JikeBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JikeBaseConfig.h; sourceTree = "<group>"; };
+		F3950134220146A800CAF450 /* calendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = calendar.entitlements; sourceTree = "<group>"; };
+		F3950135220146BF00CAF450 /* JiKeCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JiKeCalendar.entitlements; sourceTree = "<group>"; };
+		F39501362201471400CAF450 /* JiKeUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiKeUserDefaults.h; sourceTree = "<group>"; };
+		F39501372201471400CAF450 /* JiKeUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiKeUserDefaults.m; sourceTree = "<group>"; };
 		F3B01AEC21EE11AB00465ABF /* JiKeCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiKeCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B01AEF21EE11AB00465ABF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3B01AF021EE11AB00465ABF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +77,15 @@
 		F3B01B0F21EE11D600465ABF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		F3B01B1221EE11D600465ABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F3B01B1421EE11D600465ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C1443322004C9000F20E4C /* JiKeAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiKeAPIService.m; sourceTree = "<group>"; };
+		F3C1443422004C9000F20E4C /* JiKeAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiKeAPIService.h; sourceTree = "<group>"; };
+		F3C1443622004CDD00F20E4C /* JiKeURLSessionHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiKeURLSessionHelper.h; sourceTree = "<group>"; };
+		F3C1443722004CDD00F20E4C /* JiKeURLSessionHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiKeURLSessionHelper.m; sourceTree = "<group>"; };
+		F3C1443922004E9F00F20E4C /* JiKeAPIList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiKeAPIList.h; sourceTree = "<group>"; };
+		F3C1443A2200554500F20E4C /* NSString+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		F3C1443B2200554500F20E4C /* NSString+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		F3D785BA21FEB3540097D30F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		F3D785BB21FEB3540097D30F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +107,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F341D97021F8933600C111FB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F3C1443922004E9F00F20E4C /* JiKeAPIList.h */,
+				F341D97121F8933600C111FB /* JikeBaseConfig.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F341D97221F8933600C111FB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F3D785BA21FEB3540097D30F /* UIView+Frame.h */,
+				F3D785BB21FEB3540097D30F /* UIView+Frame.m */,
+				F341D96D21F88F5B00C111FB /* JikeTools.h */,
+				F341D96E21F88F5B00C111FB /* JikeTools.m */,
+				F3C1443622004CDD00F20E4C /* JiKeURLSessionHelper.h */,
+				F3C1443722004CDD00F20E4C /* JiKeURLSessionHelper.m */,
+				F3C1443A2200554500F20E4C /* NSString+JSON.h */,
+				F3C1443B2200554500F20E4C /* NSString+JSON.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		F3B01AE321EE11AB00465ABF = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +153,10 @@
 		F3B01AEE21EE11AB00465ABF /* JiKeCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				F3950135220146BF00CAF450 /* JiKeCalendar.entitlements */,
+				F3C1443222004C9000F20E4C /* Service */,
+				F341D97221F8933600C111FB /* Base */,
+				F341D97021F8933600C111FB /* Constants */,
 				F3B01AEF21EE11AB00465ABF /* AppDelegate.h */,
 				F3B01AF021EE11AB00465ABF /* AppDelegate.m */,
 				F3B01AF221EE11AB00465ABF /* ViewController.h */,
@@ -127,12 +181,24 @@
 		F3B01B0D21EE11D600465ABF /* calendar */ = {
 			isa = PBXGroup;
 			children = (
+				F3950134220146A800CAF450 /* calendar.entitlements */,
 				F3B01B0E21EE11D600465ABF /* TodayViewController.h */,
 				F3B01B0F21EE11D600465ABF /* TodayViewController.m */,
 				F3B01B1121EE11D600465ABF /* MainInterface.storyboard */,
 				F3B01B1421EE11D600465ABF /* Info.plist */,
 			);
 			path = calendar;
+			sourceTree = "<group>";
+		};
+		F3C1443222004C9000F20E4C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F3C1443422004C9000F20E4C /* JiKeAPIService.h */,
+				F3C1443322004C9000F20E4C /* JiKeAPIService.m */,
+				F39501362201471400CAF450 /* JiKeUserDefaults.h */,
+				F39501372201471400CAF450 /* JiKeUserDefaults.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +251,19 @@
 				TargetAttributes = {
 					F3B01AEB21EE11AB00465ABF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F3B01B0821EE11D600465ABF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -237,8 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B01AF421EE11AB00465ABF /* ViewController.m in Sources */,
+				F39501382201471400CAF450 /* JiKeUserDefaults.m in Sources */,
 				F3B01AFF21EE11AE00465ABF /* main.m in Sources */,
+				F341D96F21F88F5B00C111FB /* JikeTools.m in Sources */,
+				F3D785BC21FEB3540097D30F /* UIView+Frame.m in Sources */,
 				F3B01AF121EE11AB00465ABF /* AppDelegate.m in Sources */,
+				F3C1443522004C9100F20E4C /* JiKeAPIService.m in Sources */,
+				F3C1443822004CDD00F20E4C /* JiKeURLSessionHelper.m in Sources */,
+				F3C1443C2200554500F20E4C /* NSString+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B01B1021EE11D600465ABF /* TodayViewController.m in Sources */,
+				F395013C220152DD00CAF450 /* JiKeURLSessionHelper.m in Sources */,
+				F395013B2201511B00CAF450 /* JiKeAPIService.m in Sources */,
+				F395013A2201505B00CAF450 /* JikeTools.m in Sources */,
+				F39501392201503000CAF450 /* JiKeUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JiKeCalendar/JiKeCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XL7RWF47EH;
 				INFOPLIST_FILE = JiKeCalendar/Info.plist;
@@ -421,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JiKeCalendar/JiKeCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XL7RWF47EH;
 				INFOPLIST_FILE = JiKeCalendar/Info.plist;
@@ -437,6 +525,7 @@
 		F3B01B1921EE11D600465ABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = calendar/calendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XL7RWF47EH;
 				INFOPLIST_FILE = calendar/Info.plist;
@@ -455,6 +544,7 @@
 		F3B01B1A21EE11D600465ABF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = calendar/calendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XL7RWF47EH;
 				INFOPLIST_FILE = calendar/Info.plist;

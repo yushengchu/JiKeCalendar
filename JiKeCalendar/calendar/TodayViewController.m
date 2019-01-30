@@ -8,16 +8,20 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "JiKeUserDefaults.h"
+#import "JikeTools.h"
+#import "JiKeAPIService.h"
+#import "JikeBaseConfig.h"
 
 @interface TodayViewController () <NCWidgetProviding>
-
+@property (nonatomic, copy) NSDictionary* data;
 @end
 
 @implementation TodayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configUI];
+    [self configData];
     self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
 }
 
@@ -30,8 +34,49 @@
     }
 }
 
-- (void)configUI {
+- (void)configData {
+    
+    self.weekDayLabel.text = [JikeTools getWeekWithString];
+    self.monthLabel.text = [JikeTools getDateWithMonthAndDay];
+    self.isFridayLabel.text = [JikeTools isFriday] ? @"是" : @"不是";
+    self.isFridayView.backgroundColor = [JikeTools isFriday] ? FridayBGColor : OtherDayBGColor;
+    self.cardView.backgroundColor = [JikeTools isFriday] ? OtherDayBGColor : FridayBGColor;
 
+//    NSString* date = [JikeTools getWeekWithString];
+//    NSDictionary* data = [JiKeUserDefaults getCalendarData:date];
+//    if (data) {
+//        self.data = data;
+//        [self reloadData];
+//    }else {
+//        [self requestCalendarData];
+//    }
+    
+}
+
+- (void)requestCalendarData {
+    NSString* date = [JikeTools getWeekWithString];
+    NSString* userid = [JikeTools getUserId];
+    NSDictionary* params = @{
+                             @"topicId": userid,
+                             @"limit": @"20"
+                             };
+    [JiKeAPIService requestForCalendarData:params finish:^(NSInteger status, id data) {
+        if (status && data) {
+            NSArray* list = data[@"data"];
+            if (list && list.count >0 ) {
+                int r = arc4random() % [list count];
+                self.data = list[r];
+                [JiKeUserDefaults saveCalendarData:list[r] date:date];
+            }
+        }
+        [self reloadData];
+    }];
+}
+
+
+- (void)reloadData {
+    self.contentLabel.text = self.data[@"content"];
+    self.authorLabel.text = [NSString stringWithFormat:@"—— %@",self.data[@"topic"][@"content"]];
 }
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {

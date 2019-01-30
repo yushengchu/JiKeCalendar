@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface TodayViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *weekDayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *monthLabel;
+@property (weak, nonatomic) IBOutlet UILabel *isFridayLabel;
+@property (weak, nonatomic) IBOutlet UITextView *contentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *isFridayView;
+@property (weak, nonatomic) IBOutlet UIView *cardView;
 
 @end
