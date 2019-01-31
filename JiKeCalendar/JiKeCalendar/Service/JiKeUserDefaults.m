@@ -11,6 +11,7 @@
 @implementation JiKeUserDefaults
 
 + (void)saveCalendarData:(NSDictionary*)data date:(NSString*)date {
+    NSLog(@"save --- date:%@",date);
     NSString* jsonStr = [JikeTools dictionaryToJson:data];
     NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.moxie.TFAuth"];
     [userDefaults setObject:jsonStr forKey:date];
@@ -18,6 +19,7 @@
 }
 
 + (NSDictionary*)getCalendarData:(NSString*)date {
+    NSLog(@"get --- date:%@",date);
     NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.moxie.TFAuth"];
     NSString* strData = [userDefaults objectForKey:date];
     NSDictionary* data = [JikeTools dictionaryWithJsonString:strData];

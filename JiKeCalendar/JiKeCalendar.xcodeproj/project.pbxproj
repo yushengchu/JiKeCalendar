@@ -13,6 +13,8 @@
 		F395013A2201505B00CAF450 /* JikeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F341D96E21F88F5B00C111FB /* JikeTools.m */; };
 		F395013B2201511B00CAF450 /* JiKeAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443322004C9000F20E4C /* JiKeAPIService.m */; };
 		F395013C220152DD00CAF450 /* JiKeURLSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443722004CDD00F20E4C /* JiKeURLSessionHelper.m */; };
+		F39501452201775500CAF450 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C1443B2200554500F20E4C /* NSString+JSON.m */; };
+		F39501852202A41900CAF450 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D785BB21FEB3540097D30F /* UIView+Frame.m */; };
 		F3B01AF121EE11AB00465ABF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B01AF021EE11AB00465ABF /* AppDelegate.m */; };
 		F3B01AF421EE11AB00465ABF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B01AF321EE11AB00465ABF /* ViewController.m */; };
 		F3B01AF721EE11AB00465ABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B01AF521EE11AB00465ABF /* Main.storyboard */; };
@@ -329,7 +331,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B01B1021EE11D600465ABF /* TodayViewController.m in Sources */,
+				F39501452201775500CAF450 /* NSString+JSON.m in Sources */,
 				F395013C220152DD00CAF450 /* JiKeURLSessionHelper.m in Sources */,
+				F39501852202A41900CAF450 /* UIView+Frame.m in Sources */,
 				F395013B2201511B00CAF450 /* JiKeAPIService.m in Sources */,
 				F395013A2201505B00CAF450 /* JikeTools.m in Sources */,
 				F39501392201503000CAF450 /* JiKeUserDefaults.m in Sources */,

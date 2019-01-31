@@ -87,7 +87,7 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
-- (NSInteger)getFontSizeWithWeekDay{
++ (NSInteger)getFontSizeWithWeekDay{
     NSString *weekStr = [JikeTools getWeekWithString];
     if ([weekStr isEqualToString:@"Sunday"] || [weekStr isEqualToString:@"Monday"] || [weekStr isEqualToString:@"Tuesday"] || [weekStr isEqualToString:@"Friday"]) {
         return 21;

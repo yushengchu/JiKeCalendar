@@ -104,20 +104,10 @@
                                     <constraint firstItem="lhH-hq-xtk" firstAttribute="leading" secondItem="SjF-hj-ylq" secondAttribute="trailing" id="sqz-dw-NL9"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="来到即刻之后 nb成了我常常挂在嘴边的词 过去我倒是不常用 因为我觉得不是很雅观 牛的b招惹谁了" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="59N-4a-llt">
-                                <rect key="frame" x="20" y="115" width="192" height="64"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="E8Y-ZH-84M"/>
-                                </constraints>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="—— 浴室沉思" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-Ta-85q">
-                                <rect key="frame" x="10" y="180" width="285" height="21"/>
+                                <rect key="frame" x="10" y="159" width="285" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="RuG-83-kFg"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZRR-fo-fva"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -190,22 +180,31 @@
                                     <constraint firstItem="zLI-xL-2SA" firstAttribute="centerX" secondItem="gwH-gp-dzb" secondAttribute="centerX" id="TUh-yX-GOX"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="来到即刻之后 nb成了我常常挂在嘴边的词 过去我倒是不常用 因为我觉得不是很雅观 牛的b招惹谁了" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFZ-km-mFA">
+                                <rect key="frame" x="20" y="115" width="192" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="DaZ-9F-wHL"/>
+                                    <constraint firstAttribute="height" priority="900" constant="64" id="yYK-7c-uuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="gwH-gp-dzb" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="6Ai-fW-3Wy"/>
-                            <constraint firstItem="mlV-Ta-85q" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="CYK-x8-ptf"/>
                             <constraint firstItem="3sV-Gl-HvP" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="Cab-UF-6bj"/>
                             <constraint firstItem="5Kq-dF-ttv" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="5" id="D8l-XC-ls6"/>
-                            <constraint firstItem="mlV-Ta-85q" firstAttribute="top" secondItem="59N-4a-llt" secondAttribute="bottom" constant="1" id="M7g-HX-dst"/>
-                            <constraint firstItem="59N-4a-llt" firstAttribute="top" secondItem="5Kq-dF-ttv" secondAttribute="bottom" constant="15" id="NIs-uK-se3"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="mlV-Ta-85q" secondAttribute="trailing" constant="25" id="VLO-xF-UXz"/>
+                            <constraint firstItem="hFZ-km-mFA" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="20" id="PBb-tY-0Eg"/>
                             <constraint firstItem="5Kq-dF-ttv" firstAttribute="leading" secondItem="3sV-Gl-HvP" secondAttribute="trailing" id="adQ-kl-yfa"/>
-                            <constraint firstItem="59N-4a-llt" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.6" id="dZj-e9-tBk"/>
                             <constraint firstItem="3sV-Gl-HvP" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.333333" id="eG3-R8-Qun"/>
+                            <constraint firstItem="mlV-Ta-85q" firstAttribute="top" secondItem="hFZ-km-mFA" secondAttribute="bottom" constant="1" id="gbT-GZ-qoq"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="mlV-Ta-85q" secondAttribute="trailing" constant="25" id="kD9-fz-E0h"/>
                             <constraint firstItem="3sV-Gl-HvP" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="m62-c6-aHQ"/>
+                            <constraint firstItem="hFZ-km-mFA" firstAttribute="top" secondItem="5Kq-dF-ttv" secondAttribute="bottom" constant="15" id="n7W-80-DlZ"/>
                             <constraint firstItem="gwH-gp-dzb" firstAttribute="top" secondItem="3sV-Gl-HvP" secondAttribute="bottom" id="qyZ-iw-sxe"/>
-                            <constraint firstItem="59N-4a-llt" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="20" id="rdT-UU-oi2"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="5Kq-dF-ttv" secondAttribute="trailing" constant="5" id="ujg-UL-NGm"/>
+                            <constraint firstItem="mlV-Ta-85q" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="vbF-Ao-tZP"/>
                             <constraint firstItem="5Kq-dF-ttv" firstAttribute="leading" secondItem="gwH-gp-dzb" secondAttribute="trailing" id="ybx-RJ-Cmy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
@@ -216,7 +215,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="mlV-Ta-85q" id="qby-MM-zPg"/>
                         <outlet property="cardView" destination="5Kq-dF-ttv" id="ffv-aW-3gx"/>
-                        <outlet property="contentLabel" destination="59N-4a-llt" id="6RU-bu-9bH"/>
+                        <outlet property="contentLabel" destination="hFZ-km-mFA" id="8Hq-u0-1zS"/>
                         <outlet property="isFridayLabel" destination="8Sg-dM-tYG" id="KQa-J5-y0J"/>
                         <outlet property="isFridayView" destination="sJx-bf-MV5" id="tOI-qu-fvm"/>
                         <outlet property="monthLabel" destination="lhH-hq-xtk" id="z4n-Nb-wno"/>

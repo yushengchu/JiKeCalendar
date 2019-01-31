@@ -16,5 +16,6 @@
 + (NSString*)getDateWithMonthAndDay;
 + (NSString*)dictionaryToJson:(NSDictionary *)dic;
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
++ (NSInteger)getFontSizeWithWeekDay;
 
 @end

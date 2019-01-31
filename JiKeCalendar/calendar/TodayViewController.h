@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *weekDayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *monthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *isFridayLabel;
-@property (weak, nonatomic) IBOutlet UITextView *contentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *isFridayView;
